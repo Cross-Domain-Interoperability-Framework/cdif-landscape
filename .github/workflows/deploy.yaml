@@ -37,7 +37,7 @@ jobs:
           # Optional: Add Crunchbase API key if you have one
           # CRUNCHBASE_API_KEY: ${{ secrets.CRUNCHBASE_API_KEY }}
 
-      - name: Fix build directory permissions
+      - name: Set build directory permissions
         run: sudo chown -R $(id -u):$(id -g) build
 
       - name: Prepare for GitHub Pages
