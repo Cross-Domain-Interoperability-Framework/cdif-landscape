@@ -6,7 +6,8 @@
 
 foundation: CDIF
 
-url: https://cross-domain-interoperability-framework.github.io/cdif-landscape
+url: https://cross-domain-interoperability-framework.github.io
+base_path: /cdif-landscape
 
 colors:
   color1: "rgba(0, 107, 204, 1)"
