@@ -6,7 +6,7 @@
 
 foundation: CDIF
 
-url: http://127.0.0.1:8000
+#url: http://127.0.0.1:8000
 
 colors:
   color1: "rgba(0, 107, 204, 1)"
