@@ -4,15 +4,39 @@
 
 This repository hosts the landscape project for the CODATA CDIF (Cross Domain Interoperability Framework), showcasing the ecosystem of tools, standards, organizations, and projects supporting interoperable cross-domain data and machine intelligence.
 
-Visit the website at [https://landscape.cdif.org/](https://landscape.cdif.org) to explore the rich and rapidly evolving world of CDIF. 
+Visit the website at [https://cross-domain-interoperability-framework.github.io/cdif-landscape/](https://cross-domain-interoperability-framework.github.io/cdif-landscape/) to explore the rich and rapidly evolving world of CDIF. 
 
-If you are a developer or implementer, join our community Discord server around Data and Machine Intelligence.
+If you are a developer or implementer, we encourage you to join our community [Discord](https://discord.gg/v8e5AMtshT) server around Data and Machine Intelligence.
 
 ## Contributing
 
-We welcome improvements to data, logos, and documentation.
+We welcome contributions! Here's how to get started:
 
-If you need access or have questions, open an issue or contact the maintainers.
+### Adding an Entry to data.yml
+
+Before submitting your contribution, gather the following information:
+
+- **Name**: The official name of the tool, standard, organization, or project
+- **Category**: The landscape category it belongs to
+- **Description**: A brief description (2-3 sentences)
+- **Website URL**: Link to the official website or repository
+- **Logo**: SVG file (see [SVG Resources](#svg-resources) section)
+- **Organization/Repository**: GitHub organization or repository link (if applicable)
+- **Founded Year**: Year the project or organization was established
+
+Refer to the existing entries in `data.yml` for examples of the required format.
+
+**For contributors familiar with GitHub:**
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-contribution`)
+3. Make your changes (update data.yaml and add images under logos directory)
+4. Submit a pull request with a clear description of your changes
+
+**For everyone else**
+File a [GitHub issue](https://github.com/cross-domain-interoperability-framework/cdif-landscape/issues) with:
+- Your name and affiliation
+- Description of the addition or change you'd like to make
+- Relevant links or documentation
 
 ## Run Locally
 
@@ -44,14 +68,14 @@ This starts a local server and opens the website in your web browser at http://1
 
 ## SVG Resources
 
-Logos used by the landscape tools must be in SVG format. 
+Logos used by the landscape tools should preferably be in SVG format. 
 The following tools are available for conversion.
 
-### Free
+Free:
 - https://www.freeconvert.com/svg-converter
 - https://new.express.adobe.com/home/tools/convert-to-svg
 
-### Paid
+Paid:
 - https://vectorizer.ai/
 - https://vectormagic.com/
 
@@ -60,3 +84,7 @@ The following websites provide access to generic SVG images and logos:
 - https://www.svgrepo.com/
 - https://seeklogo.com/
 
+
+## License
+
+This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
