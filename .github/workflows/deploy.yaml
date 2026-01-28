@@ -17,11 +17,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Create build directory with proper permissions
+        run: mkdir -p build && chmod 777 build
+
       - name: Build landscape with Docker
         run: |
           docker run --rm \
             -v $(pwd):/landscape \
             -w /landscape \
+            --user $(id -u):$(id -g) \
             ghcr.io/cncf/landscape2:latest \
             landscape2 build \
               --data-file ./data.yml \
