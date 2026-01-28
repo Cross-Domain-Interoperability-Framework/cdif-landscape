@@ -40,7 +40,17 @@ categories:
             description: lorem ipsum dolor sit amet, consectetur adipiscing elit
             homepage_url: https://www.ddialliance.org
             logo: ddi.svg
-
+  - name: Projects
+    subcategories:
+      - name: Projects
+        items:
+          - item:
+            name: CDIF4XAS
+            description: |
+              The CDIF-4-XAS project - Describing X-Ray Spectroscopy Data for Cross-Domain Use, will enable new science by making it easier to access, combine and reuse XAS data across research infrastructures (RIs) and disciplines. 
+            homepage_url: https://oscars-project.eu/projects/cdif-4-xas-describing-x-ray-spectroscopy-data-cross-domain-use
+            logo: cdif4xas.svg
+            repo_url: https://github.com/CDIF-4-XAS/XAS-CDIF
   - name: Standards
     subcategories:
       - name: Core
