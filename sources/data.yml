@@ -1,0 +1,120 @@
+# Landscape2 data
+#
+# This file contains the data that will be used to generate the landscape.
+#
+# Reference documentation: https://github.com/cncf/landscape2/blob/main/docs/config/data.yml
+
+categories:
+  - name: Tools
+    subcategories:
+      - name: Tools
+        items:
+          - name: SDMX Tools
+            description: |
+              A listing of SDMX-related resources and tools for implementors as well as developers which are offered by sponsors and members of the wider SDMX community. 
+              The accuracy of this list depends on the information provided by each organisation. 
+              We recommend verifying the details directly with the respective providers.
+            homepage_url: https://sdmx.org/tools/
+            logo: sdmx_tools.png
+      - name: DDI
+        items:
+          - name: Nectar Publisher
+            description: |
+              Nectar Publisher aims to be a lightweight simple documentation tool for tabular data.
+              Currently supports CSV, TSV and XLSX.
+            homepage_url: https://ddi-developers.github.io/nectar-publisher/
+            logo: nectar_publisher.svg
+            repo_url: https://github.com/ddi-developers/nectar-publisher
+  - name: Organizations
+    subcategories:
+      - name: Organizations
+        items:
+          - item:
+            name: CODATA
+            description: Committee on Data of the International Science Council
+            homepage_url: https://www.codata.org
+            logo: codata.svg
+            crunchbase: https://www.crunchbase.com/organization/codata-c210
+          - item:
+            name: DDI Alliance
+            description: lorem ipsum dolor sit amet, consectetur adipiscing elit
+            homepage_url: https://www.ddialliance.org
+            logo: ddi.svg
+
+  - name: Standards
+    subcategories:
+      - name: Core
+        items:
+          - item:
+            name: DDI-CDI
+            description: |
+              DDI-CDI is a new standard which is designed to be used with research data from any domain. While it minimally describes metadata for cataloguing and citation, its fundamental purpose is to describe data and process. 
+            homepage_url: https://ddialliance.org/ddi-cdi
+            logo: ddi.svg
+          - item:
+            name: schema.org
+            description: |
+              Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond.
+            homepage_url: https://schema.org/
+            logo: schemaorg.svg
+            repo_url: https://github.com/schemaorg/schemaorg
+          - item:
+            name: SDMX
+            description: |
+              SDMX (Statistical Data and Metadata eXchange) is an international initiative that aims to foster standards for the exchange of statistical information and to standardize and modernize statistical data and metadata exchange processes.
+            homepage_url: https://sdmx.org/
+            logo: sdmx.svg
+      - name: Foundational
+        items:
+          - item:
+            name: SKOS
+            homepage_url: https://www.w3.org/TR/skos-reference/
+            logo: w3c_semantic.svg
+      - name: Synergistic
+        items:
+          - name: Croissant
+            description: |
+                Croissant is an open community-built standardized metadata vocabulary for ML datasets, including key attributes and properties of datasets, as well as information required to load these datasets in ML tools. Croissant enables data interoperability between ML frameworks and beyond, which makes ML work easier to reproduce and replicate.
+            homepage_url: https://mlcommons.org/working-groups/data/croissant/
+            logo: mlcommons.svg
+            repo_url: https://github.com/mlcommons/croissant
+
+  - name: Category 1
+    subcategories:
+      - name: Subcategory 1-1
+        items:
+          - name: Item 1
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            description: This is the description of item 1
+            homepage_url: https://cncf.io
+            logo: cncf.svg
+            project: graduated
+            repo_url: https://github.com/cncf/landscape2
+            twitter: https://twitter.com/CloudNativeFdn
+          - name: Item 2
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            description: This is the description of item 2
+            homepage_url: https://cncf.io
+            logo: cncf.svg
+            project: sandbox
+            repo_url: https://github.com/cncf/landscape2
+            twitter: https://twitter.com/CloudNativeFdn
+          - name: Item 3
+            description: This is the description of item 3
+            homepage_url: https://cncf.io
+            logo: cncf.svg
+      - name: Subcategory 1-2
+        items:
+          - name: Item 4
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            description: This is the description of item 4
+            homepage_url: https://cncf.io
+            logo: cncf.svg
+            repo_url: https://github.com/cncf/landscape2
+            twitter: https://twitter.com/CloudNativeFdn
+          - name: Item 5
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            description: This is the description of item 5
+            homepage_url: https://cncf.io
+            logo: cncf.svg
+            repo_url: https://github.com/cncf/landscape2
