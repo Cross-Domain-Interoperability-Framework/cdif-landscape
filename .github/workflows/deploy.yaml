@@ -1,0 +1,48 @@
+name: Deploy Landscape to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build landscape with Docker
+        run: |
+          docker run --rm \
+            -v $(pwd):/landscape \
+            -w /landscape \
+            ghcr.io/cncf/landscape2:latest \
+            landscape2 build \
+              --data-file ./data.yml \
+              --settings-file ./settings.yml \
+              --guide-file ./guide.yml \
+              --logos-path ./logos \
+              --output-dir ./build
+        env:
+          GITHUB_TOKENS: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: Add Crunchbase API key if you have one
+          # CRUNCHBASE_API_KEY: ${{ secrets.CRUNCHBASE_API_KEY }}
+
+      - name: Prepare for GitHub Pages
+        run: |
+          # Copy index.html to 404.html for SPA routing
+          cp build/index.html build/404.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          commit_message: "Deploy landscape - ${{ github.sha }}"
