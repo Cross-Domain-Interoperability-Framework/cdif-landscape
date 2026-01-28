@@ -25,7 +25,6 @@ jobs:
           docker run --rm \
             -v $(pwd):/landscape \
             -w /landscape \
-            --user $(id -u):$(id -g) \
             ghcr.io/cncf/landscape2:latest \
             landscape2 build \
               --data-file ./data.yml \
@@ -37,6 +36,9 @@ jobs:
           GITHUB_TOKENS: ${{ secrets.GITHUB_TOKEN }}
           # Optional: Add Crunchbase API key if you have one
           # CRUNCHBASE_API_KEY: ${{ secrets.CRUNCHBASE_API_KEY }}
+
+      - name: Fix build directory permissions
+        run: sudo chown -R $(id -u):$(id -g) build
 
       - name: Prepare for GitHub Pages
         run: |
